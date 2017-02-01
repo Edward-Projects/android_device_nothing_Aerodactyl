@@ -266,6 +266,8 @@ $(call inherit-product, hardware/nothing/nt-fwk/nt-fwk.mk)
 # Overlays
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
+PRODUCT_ENFORCE_RRO_TARGETS += framework-res
+
 PRODUCT_PACKAGES += \
     NothingCarrierConfigResTarget \
     NothingFrameworksResTarget \
