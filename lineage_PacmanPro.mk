@@ -9,6 +9,13 @@ $(call inherit-product, device/nothing/Aerodactyl/device-PacmanPro.mk)
 # Inherit from the LineageOS configuration.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+DERPFEST_BUILD_TYPE := Unofficial
+DERPFEST_BUILD_VARIANT := Beta
+
 PRODUCT_BRAND := Nothing
 PRODUCT_DEVICE := PacmanPro
 PRODUCT_MANUFACTURER := Nothing
